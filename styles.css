@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+.fundo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+        z-index: -1;
+      background: url(./assets/fundo.png) no-repeat center/cover;
+   }
+   
+
+.netflix{
+    width: 331px;
+    margin-top: -33px;
+    margin-right: 900px;
+    margin-left: 70px;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ 
+}
+
+
+
+header select {
+    width: 150px;
+    height: 43px;
+    font-size: 20px;
+}
+
+
+.botao-entrar{
+    width: 100px;
+    height: 43px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.caixa-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+
+.caixa-email h1{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    width: 689px;
+    text-align: center;
+}
+
+
+.caixa-email h2{
+    font-weight: bold;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+    
+.caixa-email p{
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+
+.email-botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+    
+   
+}
+
+.email-botao button{
+    font-weight: 500;
+    color: white;
+    background-color: red;
+    width: 135px;
+    height: 48px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.email-botao input{
+    height: 48px;
+    width: 454px;
+    font-size: 24px;
+
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas de tablets */
+@media (max-width: 768px) {
+    .caixa-email h1 {
+        font-size: 50px;
+        width: 90%;
+    }
+
+    .caixa-email h2 {
+        font-size: 20px;
+    }
+
+    .caixa-email p {
+        font-size: 14px;
+    }
+
+    .email-botao input {
+        font-size: 18px;
+    }
+
+    .email-botao button {
+        width: 120px;
+        font-size: 16px;
+    }
+}
+
+/* Para telas de smartphones */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .netflix {
+        width: 250px;
+        margin: 0;
+    }
+
+    .caixa-email h1 {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    .caixa-email h2 {
+        font-size: 18px;
+    }
+
+    .caixa-email p {
+        font-size: 14px;
+    }
+
+    .email-botao input {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .email-botao button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 320px) {
+    .caixa-email h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .caixa-email h2 {
+        font-size: 16px;
+    }
+
+    .caixa-email p {
+        font-size: 12px;
+    }
+
+    .email-botao input {
+        font-size: 14px;
+    }
+
+    .email-botao button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
